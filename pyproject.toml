@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "code-generation-claim-audit"
+version = "0.1.0"
+description = "Offline documentation claim auditor for source authoring"
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+
+[project.scripts]
+code-generation-claim-audit = "code_generation_claim_audit.audit:main"
+
+[tool.setuptools.packages.find]
+include = ["code_generation_claim_audit*"]
